@@ -10,6 +10,9 @@ import org.testng.Assert;
 
 import org.testng.annotations.Test;
 
+import amarr.pages.events.HomePageEvents;
+import amarr.pages.events.LoginPageEvents;
+
 public class BStackDemoTest extends SeleniumTest {
 	
 
@@ -50,6 +53,14 @@ public class BStackDemoTest extends SeleniumTest {
 		Assert.assertEquals(oderNow, "ORDER NOW");
 	}
 	
+	@Test
+	public void loginTestWithPom() {
+		HomePageEvents home=new HomePageEvents();
+	    LoginPageEvents loginPage=	home.signIn();
+	    loginPage.typeEmail("salmanqc@yahoo.com");
+	    loginPage.typePassword("Amarr@123");
+	    loginPage.clickLoginButton();
+	}
 	@Test
 	public void loginWithInvalidCredentials() throws InterruptedException {
 		

@@ -1,94 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="9" passed="2" failed="1" skipped="0">
+<testng-results ignored="9" total="12" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-12T22:29:56 EST" name="Default suite" finished-at="2023-12-12T22:33:45 EST" duration-ms="228722">
+  <suite started-at="2023-12-19T01:03:40 EST" name="Default suite" finished-at="2023-12-19T01:04:25 EST" duration-ms="45081">
     <groups>
     </groups>
-    <test started-at="2023-12-12T22:29:56 EST" name="Default test-2" finished-at="2023-12-12T22:32:58 EST" duration-ms="181843">
+    <test started-at="2023-12-19T01:03:40 EST" name="Default test-0" finished-at="2023-12-19T01:03:56 EST" duration-ms="15862">
       <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@7573e12f]" started-at="2023-12-12T22:29:57 EST" name="setUp" finished-at="2023-12-12T22:31:25 EST" duration-ms="88854" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethods()[pri:0, instance:com.browserstack.BStackDemoTest@5411dd90]" started-at="2023-12-19T01:03:40 EST" name="beforeTestMethods" finished-at="2023-12-19T01:03:40 EST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethods -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.browserstack.BStackDemoTest@5411dd90]" started-at="2023-12-19T01:03:40 EST" name="setUp" finished-at="2023-12-19T01:03:49 EST" duration-ms="9061" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.browserstack.BStackDemoTest.loginTestWithPom()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="accountCreation()[pri:0, instance:com.browserstack.BStackDemoTest@7573e12f]" started-at="2023-12-12T22:31:25 EST" name="accountCreation" finished-at="2023-12-12T22:32:57 EST" duration-ms="91908" status="FAIL">
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:163)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-at com.browserstack.BStackDemoTest.accountCreation(BStackDemoTest.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+        <test-method signature="loginTestWithPom()[pri:0, instance:com.browserstack.BStackDemoTest@5411dd90]" started-at="2023-12-19T01:03:49 EST" name="loginTestWithPom" finished-at="2023-12-19T01:03:54 EST" duration-ms="5039" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accountCreation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@7573e12f]" started-at="2023-12-12T22:32:57 EST" name="tearDown" finished-at="2023-12-12T22:32:58 EST" duration-ms="952" status="PASS">
+        </test-method> <!-- loginTestWithPom -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.browserstack.BStackDemoTest@5411dd90]" started-at="2023-12-19T01:03:55 EST" name="tearDown" finished-at="2023-12-19T01:03:56 EST" duration-ms="1028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTestWithPom status=SUCCESS method=BStackDemoTest.loginTestWithPom()[pri:0, instance:com.browserstack.BStackDemoTest@5411dd90] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.BStackDemoTest -->
-    </test> <!-- Default test-2 -->
-    <test started-at="2023-12-12T22:29:56 EST" name="Default test-0" finished-at="2023-12-12T22:33:21 EST" duration-ms="204219">
-      <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@23e44287]" started-at="2023-12-12T22:29:57 EST" name="setUp" finished-at="2023-12-12T22:33:04 EST" duration-ms="187765" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.browserstack.BStackDemoTest@5411dd90]" started-at="2023-12-19T01:03:56 EST" name="afterTestMethod" finished-at="2023-12-19T01:03:56 EST" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="accountCreation()[pri:0, instance:com.browserstack.BStackDemoTest@23e44287]" started-at="2023-12-12T22:33:04 EST" name="accountCreation" finished-at="2023-12-12T22:33:19 EST" duration-ms="15065" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- accountCreation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@23e44287]" started-at="2023-12-12T22:33:20 EST" name="tearDown" finished-at="2023-12-12T22:33:21 EST" duration-ms="998" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- afterTestMethod -->
       </class> <!-- com.browserstack.BStackDemoTest -->
     </test> <!-- Default test-0 -->
-    <test started-at="2023-12-12T22:29:56 EST" name="Default test-1" finished-at="2023-12-12T22:33:45 EST" duration-ms="228722">
+    <test started-at="2023-12-19T01:03:40 EST" name="Default test-1" finished-at="2023-12-19T01:04:15 EST" duration-ms="35137">
       <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@66ba7e45]" started-at="2023-12-12T22:29:57 EST" name="setUp" finished-at="2023-12-12T22:33:34 EST" duration-ms="217121" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethods()[pri:0, instance:com.browserstack.BStackDemoTest@6d9fb2d1]" started-at="2023-12-19T01:03:40 EST" name="beforeTestMethods" finished-at="2023-12-19T01:03:40 EST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethods -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.browserstack.BStackDemoTest@6d9fb2d1]" started-at="2023-12-19T01:03:40 EST" name="setUp" finished-at="2023-12-19T01:04:10 EST" duration-ms="29873" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.browserstack.BStackDemoTest.loginTestWithPom()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="accountCreation()[pri:0, instance:com.browserstack.BStackDemoTest@66ba7e45]" started-at="2023-12-12T22:33:34 EST" name="accountCreation" finished-at="2023-12-12T22:33:44 EST" duration-ms="10229" status="PASS">
+        <test-method signature="loginTestWithPom()[pri:0, instance:com.browserstack.BStackDemoTest@6d9fb2d1]" started-at="2023-12-19T01:04:10 EST" name="loginTestWithPom" finished-at="2023-12-19T01:04:14 EST" duration-ms="3691" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accountCreation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@66ba7e45]" started-at="2023-12-12T22:33:44 EST" name="tearDown" finished-at="2023-12-12T22:33:45 EST" duration-ms="984" status="PASS">
+        </test-method> <!-- loginTestWithPom -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.browserstack.BStackDemoTest@6d9fb2d1]" started-at="2023-12-19T01:04:14 EST" name="tearDown" finished-at="2023-12-19T01:04:15 EST" duration-ms="994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTestWithPom status=SUCCESS method=BStackDemoTest.loginTestWithPom()[pri:0, instance:com.browserstack.BStackDemoTest@6d9fb2d1] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.browserstack.BStackDemoTest@6d9fb2d1]" started-at="2023-12-19T01:04:15 EST" name="afterTestMethod" finished-at="2023-12-19T01:04:15 EST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
       </class> <!-- com.browserstack.BStackDemoTest -->
     </test> <!-- Default test-1 -->
+    <test started-at="2023-12-19T01:03:40 EST" name="Default test-2" finished-at="2023-12-19T01:04:25 EST" duration-ms="45081">
+      <class name="com.browserstack.BStackDemoTest">
+        <test-method is-config="true" signature="beforeTestMethods()[pri:0, instance:com.browserstack.BStackDemoTest@238acd0b]" started-at="2023-12-19T01:03:40 EST" name="beforeTestMethods" finished-at="2023-12-19T01:03:40 EST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethods -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.browserstack.BStackDemoTest@238acd0b]" started-at="2023-12-19T01:03:40 EST" name="setUp" finished-at="2023-12-19T01:04:20 EST" duration-ms="40081" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.browserstack.BStackDemoTest.loginTestWithPom()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTestWithPom()[pri:0, instance:com.browserstack.BStackDemoTest@238acd0b]" started-at="2023-12-19T01:04:20 EST" name="loginTestWithPom" finished-at="2023-12-19T01:04:24 EST" duration-ms="3242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestWithPom -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.browserstack.BStackDemoTest@238acd0b]" started-at="2023-12-19T01:04:24 EST" name="tearDown" finished-at="2023-12-19T01:04:25 EST" duration-ms="1165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTestWithPom status=SUCCESS method=BStackDemoTest.loginTestWithPom()[pri:0, instance:com.browserstack.BStackDemoTest@238acd0b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.browserstack.BStackDemoTest@238acd0b]" started-at="2023-12-19T01:04:25 EST" name="afterTestMethod" finished-at="2023-12-19T01:04:25 EST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+      </class> <!-- com.browserstack.BStackDemoTest -->
+    </test> <!-- Default test-2 -->
   </suite> <!-- Default suite -->
 </testng-results>
