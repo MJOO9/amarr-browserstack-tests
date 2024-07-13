@@ -11,4 +11,19 @@ public interface LoginPageElements {
 	String loginButtonXpath="(//button/span[text()='LOGIN'])[3]";
 	String emailInputFieldXpath="//input[@aria-label='Email Address']";
 	String passwordInputFieldXpath="//input[@aria-label='Password']";
+	
+	/**
+	 * Below list all id for login page
+	 */
+
+	String emailUserID = "email-address-id";
+	String passwordID="password-id";
+
+	/**
+	 * Below list all XPATH for login page
+	 * 
+	 */
+
+	String continueXpath = "//button[@type='submit']";
+
 }

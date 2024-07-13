@@ -529,3 +529,91 @@
 01:04:26.040 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/0019912b548fe61dee48f3e418c5d26108f16be3
 01:04:26.040 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
 01:04:27.472 [Thread-5] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+20:24:39.394 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+20:24:39.397 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+20:24:39.535 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\TnTWorkspace\testng-browserstack-master\browserstack.yml
+20:24:39.577 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+20:24:39.818 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+20:24:42.582 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+20:24:46.574 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+20:25:36.128 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/szxqpdbiccc6dktdwduc4maxk7tdmuow2odnm2x6 to view build report, insights, and many more debugging information all at one place!
+
+20:25:36.332 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/28833f1002851ed35790a7f6cd4725408e22e59a
+20:25:36.332 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+20:25:38.047 [Thread-5] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+20:29:19.050 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+20:29:19.052 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+20:29:19.190 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\TnTWorkspace\testng-browserstack-master\browserstack.yml
+20:29:19.230 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+20:29:19.471 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+20:29:22.185 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+20:29:26.100 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+20:30:19.902 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/ct3xkjnivto1c4uau0v5hjpicz5tvmcgkzyhczbn to view build report, insights, and many more debugging information all at one place!
+
+20:30:20.144 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/79190ee5a49f0850e65358cdb593e6c2623848e8
+20:30:20.144 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+20:30:21.820 [Thread-5] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+18:13:12.027 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+18:13:12.030 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+18:13:12.168 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\TnTWorkspace\testng-browserstack-master\browserstack.yml
+18:13:12.216 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+18:13:12.486 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+18:13:15.450 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+18:13:19.564 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+18:23:05.660 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+18:23:05.661 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+18:23:05.803 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\TnTWorkspace\testng-browserstack-master\browserstack.yml
+18:23:05.845 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+18:23:06.070 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+18:23:08.815 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+18:23:12.488 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+18:28:06.002 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+18:28:06.009 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+18:28:06.544 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\TnTWorkspace\testng-browserstack-master\browserstack.yml
+18:28:06.713 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+18:28:07.159 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+18:28:09.806 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+18:28:13.689 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+18:28:14.050 [Thread-2] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/tueiyqamkid1tbw5pewyrx2w8yk3rlmp7d2qeaji to view build report, insights, and many more debugging information all at one place!
+
+18:28:15.761 [Thread-7] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+18:31:31.221 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+18:31:31.223 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+18:31:31.359 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\TnTWorkspace\testng-browserstack-master\browserstack.yml
+18:31:31.401 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+18:31:31.629 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+18:31:34.104 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+18:31:38.025 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+18:32:32.067 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/70f44xnz1icbrkrrlg0o5lm3khnziar7znoc23fh to view build report, insights, and many more debugging information all at one place!
+
+18:32:32.253 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/8aadf70ac204ba6ec01149e39a8c2f11effcbe31
+18:32:32.253 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+18:32:33.856 [Thread-5] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+00:07:03.845 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+00:07:03.848 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+00:07:03.992 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {style.color=always, basedir=C\:\\TnTWorkspace\\testng-browserstack-master, user.dir=C\:\\TnTWorkspace\\testng-browserstack-master, localrepository=C\:\\Users\\md786\\.m2\\repository}
+00:07:03.993 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\TnTWorkspace\testng-browserstack-master\browserstack.yml
+00:07:04.036 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+00:07:04.283 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+00:07:06.535 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+00:07:10.472 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+00:07:14.323 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+00:14:53.893 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/6fnguscppq1yua9tgn5ihilyirlbvn4xjlkrute0 to view build report, insights, and many more debugging information all at one place!
+
+00:14:53.893 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:14:56.651 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/ef44c8b128815393646ee9feb6e9d8d014c64d61
+00:14:56.651 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+16:26:16.643 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+16:26:16.646 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+16:26:16.817 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:26:16.818 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\TnTWorkspace\testng-browserstack-master\browserstack.yml
+16:26:16.867 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:26:17.265 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+16:26:19.592 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+16:26:23.580 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+16:26:27.632 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+16:29:36.688 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/wtfsarna9xgo2ujsxyjjhzijxn1hyedgq5czsyi6 to view build report, insights, and many more debugging information all at one place!
+
+16:29:36.688 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+16:29:39.567 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/3233ed8288fcb16a413d573db65535d3e415a631
+16:29:39.567 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
