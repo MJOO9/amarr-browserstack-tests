@@ -10,16 +10,18 @@ import org.testng.Assert;
 
 import org.testng.annotations.Test;
 
-public class BStackDemoTest extends SeleniumTest {
-	
+import amarr.pages.events.HomePageEvents;
+import amarr.pages.events.LoginPageEvents;
+import amarr.pages.events.OrderNowEvents;
+import amarr.pages.events.ProfilePageEvents;
 
-	
+public class BStackDemoTest extends SeleniumTest {
+
 	@Test
 	public void loginWithValidCredential() throws Exception {
 
 		// WebDriverManager.chromedriver().setup();
 
-	
 		WebElement logo = driver.findElement(By.xpath("//img[@alt='Logo']"));
 		Assert.assertTrue(logo.isDisplayed(), "Logo is displayed");
 		driver.findElement(By.id("email-address-id")).sendKeys("salmanqc@yahoo.com");
@@ -49,20 +51,28 @@ public class BStackDemoTest extends SeleniumTest {
 		String oderNow = driver.findElement(By.xpath("(//a[@aria-label='ORDER NOW'])[1]")).getText();
 		Assert.assertEquals(oderNow, "ORDER NOW");
 	}
-	
+
+	@Test
+	public void loginTestWithPom() {
+		HomePageEvents home = new HomePageEvents();
+		LoginPageEvents loginPage = home.clickOnLogin();
+		loginPage.typeEmail("salmanqc@yahoo.com");
+		loginPage.typePassword("Amarr@123");
+		loginPage.clickLoginButton();
+	}
+
 	@Test
 	public void loginWithInvalidCredentials() throws InterruptedException {
-		
-	
+
 		driver.findElement(By.id("email-address-id")).sendKeys("karimqc@yahoo.com");
 		driver.findElement(By.id("password-id")).sendKeys("Amarr@123");
 		driver.findElement(By.xpath("(//button[span[contains(text(),'LOGIN')]])[3]")).click();
-		
+
 		Thread.sleep(3000);
 		String errorMsg = driver.findElement(By.xpath("//span[contains(text(),'- Please')]")).getText();
 		Assert.assertEquals(errorMsg, "- Please check your email and password and try again.");
 	}
-	
+
 	@Test
 	public void accountCreation() throws InterruptedException {
 		driver.findElement(By.xpath("//a[@aria-label='User Account Button']")).click();
@@ -70,27 +80,62 @@ public class BStackDemoTest extends SeleniumTest {
 		driver.findElement(By.id("first-name-id")).sendKeys("Mark");
 		driver.findElement(By.id("last-name-id")).sendKeys("Bejos");
 		driver.findElement(By.id("phone-number-id")).sendKeys(generateRandomPhoneNumber());
-	
-		
-		driver.findElement(By.id("email-address-id")).sendKeys("markbejos"+generateRandomPhoneNumber()+ "@gmail.com");
-		
+
+		driver.findElement(By.id("email-address-id"))
+				.sendKeys("markbejos" + generateRandomPhoneNumber() + "@gmail.com");
+
 		driver.findElement(By.id("password-id")).sendKeys("Mark&bejos");
-		
+
 		driver.findElement(By.id("re-enter-password-id")).sendKeys("Mark&bejos");
 		driver.findElement(By.xpath("//button/span[text()='CREATE']")).click();
-		//tikmark img  xpath (//img[@loading='lazy'])[3] 
+		// tikmark img xpath (//img[@loading='lazy'])[3]
 		// Accoutn created text
 		Thread.sleep(5000);
-	    boolean tikMarkVisible=	driver.findElement(By.xpath("(//img[@loading='lazy'])[3]")).isDisplayed();
-	    Assert.assertTrue(tikMarkVisible, "Account created tikmark Image is displaying");
-	    String msg= driver.findElement(By.xpath(" //h4[contains(text(),'Account')]")).getText();
-	    Assert.assertEquals(msg, "Account Created!");
+		boolean tikMarkVisible = driver.findElement(By.xpath("(//img[@loading='lazy'])[3]")).isDisplayed();
+		Assert.assertTrue(tikMarkVisible, "Account created tikmark Image is displaying");
+		String msg = driver.findElement(By.xpath(" //h4[contains(text(),'Account')]")).getText();
+		Assert.assertEquals(msg, "Account Created!");
 	}
-	
-    private String generateRandomPhoneNumber() {
-        Random random = new Random();
-        // Generate a random number between 1000000000 and 9999999999
-        long randomLong = 1000000000L + (long) (random.nextDouble() * 8999999999L);
-        return String.valueOf(randomLong);
-    }
+
+	private String generateRandomPhoneNumber() {
+		Random random = new Random();
+		// Generate a random number between 1000000000 and 9999999999
+		long randomLong = 1000000000L + (long) (random.nextDouble() * 8999999999L);
+		return String.valueOf(randomLong);
+	}
+
+	@Test
+
+	public void checkoutAnItem() throws InterruptedException {
+		HomePageEvents home = new HomePageEvents();
+		// home.clickRejectCookies();
+		home.clickOnSingInCreateAccount();
+		LoginPageEvents login = home.clickOnLogin();
+		ProfilePageEvents profile = login.loginAsAdmin();
+		Thread.sleep(5000);
+
+		OrderNowEvents orderNow = profile.clickOrderNow();
+		orderNow.selectWidthByText("8'");
+		orderNow.selectHeightByText("7'");
+		orderNow.selectHeadRoomByValue("GT18");
+		orderNow.selectSideRoomByValue("5-3/4");
+
+		orderNow.selectBackRoomByValue("20");
+		orderNow.clickNext();
+		// Thread.sleep(5000);
+		orderNow.selectClassicaSelection();
+
+		orderNow.clickNextONCustomize();
+		// Thread.sleep(10000);
+		// orderNow.clickNextONCustomize();
+		// Thread.sleep(10000);
+		orderNow.clickNoThanks();
+		orderNow.clickAddToCart();
+		orderNow.clickCkeckOut();
+		orderNow.selectconfirmationCheckBoxAndClcikNext();
+		orderNow.inputForPaymentDetailsAndPay();
+		orderNow.verifyOrderPlaced("Order Placed!");
+
+	}
+
 }

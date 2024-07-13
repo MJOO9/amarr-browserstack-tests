@@ -9,10 +9,10 @@ platforms:
     osVersion: 11
     browserName: Edge
     browserVersion: 117.0
-  - deviceName: Samsung Galaxy Note 10
-    osVersion: 9.0
-    browserName: chrome
-    deviceOrientation: portrait
+  - os: OS X
+    osVersion: Sonoma
+    browserName: Chrome
+    browserVersion: latest
 browserstackLocal: true
 buildName: browserstack-build-1
 projectName: BrowserStack Sample
