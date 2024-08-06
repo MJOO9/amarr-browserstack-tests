@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="12" passed="0" failed="3" skipped="0">
+<testng-results ignored="12" total="15" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-11T16:26:28 EDT" name="Default suite" finished-at="2024-06-11T16:29:36 EDT" duration-ms="188380">
+  <suite started-at="2024-07-22T20:48:48 EDT" name="Default suite" finished-at="2024-07-22T20:51:48 EDT" duration-ms="179533">
     <groups>
     </groups>
-    <test started-at="2024-06-11T16:26:28 EDT" name="Default test-1" finished-at="2024-06-11T16:27:35 EDT" duration-ms="67102">
+    <test started-at="2024-07-22T20:48:48 EDT" name="Default test-0" finished-at="2024-07-22T20:49:47 EDT" duration-ms="58619">
       <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="beforeTestMethods()[pri:0, instance:com.browserstack.BStackDemoTest@4074023c]" started-at="2024-06-11T16:26:28 EDT" name="beforeTestMethods" finished-at="2024-06-11T16:26:28 EDT" duration-ms="162" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethods()[pri:0, instance:com.browserstack.BStackDemoTest@398474a2]" started-at="2024-07-22T20:48:49 EDT" name="beforeTestMethods" finished-at="2024-07-22T20:48:49 EDT" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethods -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.browserstack.BStackDemoTest@4074023c]" started-at="2024-06-11T16:26:28 EDT" name="setUp" finished-at="2024-06-11T16:26:43 EDT" duration-ms="14921" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.browserstack.BStackDemoTest@398474a2]" started-at="2024-07-22T20:48:49 EDT" name="setUp" finished-at="2024-07-22T20:48:55 EDT" duration-ms="6714" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.browserstack.BStackDemoTest.loginWithInvalidCredentials() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.browserstack.BStackDemoTest.checkoutAnItem() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidCredentials()[pri:0, instance:com.browserstack.BStackDemoTest@4074023c]" started-at="2024-06-11T16:26:43 EDT" name="loginWithInvalidCredentials" finished-at="2024-06-11T16:27:33 EDT" duration-ms="50169" status="FAIL">
+        <test-method signature="checkoutAnItem()[pri:0, instance:com.browserstack.BStackDemoTest@398474a2]" started-at="2024-07-22T20:48:55 EDT" name="checkoutAnItem" finished-at="2024-07-22T20:49:46 EDT" duration-ms="50178" status="FAIL">
           <exception class="java.lang.ClassCastException">
             <message>
               <![CDATA[class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')]]>
@@ -33,10 +33,12 @@
             <full-stacktrace>
               <![CDATA[java.lang.ClassCastException: class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')
 at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:163)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-at com.browserstack.BStackDemoTest.loginWithInvalidCredentials(BStackDemoTest.java:68)
+at amarr.core.ElementFetcher.getWebElement(ElementFetcher.java:33)
+at amarr.pages.events.HomePageEvents.clickOnSingInCreateAccount(HomePageEvents.java:34)
+at com.browserstack.BStackDemoTest.checkoutAnItem(BStackDemoTest.java:112)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -63,175 +65,179 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.browserstack.BStackDemoTest@4074023c]" started-at="2024-06-11T16:27:33 EDT" name="tearDown" finished-at="2024-06-11T16:27:34 EDT" duration-ms="1359" status="PASS">
+        </test-method> <!-- checkoutAnItem -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.browserstack.BStackDemoTest@398474a2]" started-at="2024-07-22T20:49:46 EDT" name="tearDown" finished-at="2024-07-22T20:49:47 EDT" duration-ms="1133" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithInvalidCredentials status=FAILURE method=BStackDemoTest.loginWithInvalidCredentials()[pri:0, instance:com.browserstack.BStackDemoTest@4074023c] output={null}]]]>
+                <![CDATA[[TestResult name=checkoutAnItem status=FAILURE method=BStackDemoTest.checkoutAnItem()[pri:0, instance:com.browserstack.BStackDemoTest@398474a2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.browserstack.BStackDemoTest@4074023c]" started-at="2024-06-11T16:27:35 EDT" name="afterTestMethod" finished-at="2024-06-11T16:27:35 EDT" duration-ms="178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestMethod -->
-      </class> <!-- com.browserstack.BStackDemoTest -->
-    </test> <!-- Default test-1 -->
-    <test started-at="2024-06-11T16:26:28 EDT" name="Default test-2" finished-at="2024-06-11T16:28:36 EDT" duration-ms="128669">
-      <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="beforeTestMethods()[pri:0, instance:com.browserstack.BStackDemoTest@3c0fbd3a]" started-at="2024-06-11T16:26:28 EDT" name="beforeTestMethods" finished-at="2024-06-11T16:26:28 EDT" duration-ms="162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestMethods -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.browserstack.BStackDemoTest@3c0fbd3a]" started-at="2024-06-11T16:26:28 EDT" name="setUp" finished-at="2024-06-11T16:27:45 EDT" duration-ms="76769" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.browserstack.BStackDemoTest.loginWithInvalidCredentials() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidCredentials()[pri:0, instance:com.browserstack.BStackDemoTest@3c0fbd3a]" started-at="2024-06-11T16:27:45 EDT" name="loginWithInvalidCredentials" finished-at="2024-06-11T16:28:35 EDT" duration-ms="50205" status="FAIL">
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:163)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-at com.browserstack.BStackDemoTest.loginWithInvalidCredentials(BStackDemoTest.java:68)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.browserstack.BStackDemoTest@3c0fbd3a]" started-at="2024-06-11T16:28:35 EDT" name="tearDown" finished-at="2024-06-11T16:28:36 EDT" duration-ms="1248" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithInvalidCredentials status=FAILURE method=BStackDemoTest.loginWithInvalidCredentials()[pri:0, instance:com.browserstack.BStackDemoTest@3c0fbd3a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.browserstack.BStackDemoTest@3c0fbd3a]" started-at="2024-06-11T16:28:36 EDT" name="afterTestMethod" finished-at="2024-06-11T16:28:36 EDT" duration-ms="32" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestMethod -->
-      </class> <!-- com.browserstack.BStackDemoTest -->
-    </test> <!-- Default test-2 -->
-    <test started-at="2024-06-11T16:26:28 EDT" name="Default test-0" finished-at="2024-06-11T16:29:36 EDT" duration-ms="188380">
-      <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="beforeTestMethods()[pri:0, instance:com.browserstack.BStackDemoTest@213860b8]" started-at="2024-06-11T16:26:28 EDT" name="beforeTestMethods" finished-at="2024-06-11T16:26:28 EDT" duration-ms="162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestMethods -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.browserstack.BStackDemoTest@213860b8]" started-at="2024-06-11T16:26:28 EDT" name="setUp" finished-at="2024-06-11T16:28:42 EDT" duration-ms="134305" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.browserstack.BStackDemoTest.loginWithInvalidCredentials() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidCredentials()[pri:0, instance:com.browserstack.BStackDemoTest@213860b8]" started-at="2024-06-11T16:28:42 EDT" name="loginWithInvalidCredentials" finished-at="2024-06-11T16:29:35 EDT" duration-ms="52725" status="FAIL">
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:163)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-at com.browserstack.BStackDemoTest.loginWithInvalidCredentials(BStackDemoTest.java:68)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.browserstack.BStackDemoTest@213860b8]" started-at="2024-06-11T16:29:35 EDT" name="tearDown" finished-at="2024-06-11T16:29:36 EDT" duration-ms="923" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithInvalidCredentials status=FAILURE method=BStackDemoTest.loginWithInvalidCredentials()[pri:0, instance:com.browserstack.BStackDemoTest@213860b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.browserstack.BStackDemoTest@213860b8]" started-at="2024-06-11T16:29:36 EDT" name="afterTestMethod" finished-at="2024-06-11T16:29:36 EDT" duration-ms="30" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.browserstack.BStackDemoTest@398474a2]" started-at="2024-07-22T20:49:47 EDT" name="afterTestMethod" finished-at="2024-07-22T20:49:47 EDT" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
       </class> <!-- com.browserstack.BStackDemoTest -->
     </test> <!-- Default test-0 -->
+    <test started-at="2024-07-22T20:48:48 EDT" name="Default test-2" finished-at="2024-07-22T20:50:44 EDT" duration-ms="115274">
+      <class name="com.browserstack.BStackDemoTest">
+        <test-method is-config="true" signature="beforeTestMethods()[pri:0, instance:com.browserstack.BStackDemoTest@56303475]" started-at="2024-07-22T20:48:49 EDT" name="beforeTestMethods" finished-at="2024-07-22T20:48:49 EDT" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethods -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.browserstack.BStackDemoTest@56303475]" started-at="2024-07-22T20:48:49 EDT" name="setUp" finished-at="2024-07-22T20:49:51 EDT" duration-ms="62536" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.browserstack.BStackDemoTest.checkoutAnItem() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkoutAnItem()[pri:0, instance:com.browserstack.BStackDemoTest@56303475]" started-at="2024-07-22T20:49:51 EDT" name="checkoutAnItem" finished-at="2024-07-22T20:50:41 EDT" duration-ms="50223" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:163)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at amarr.core.ElementFetcher.getWebElement(ElementFetcher.java:33)
+at amarr.pages.events.HomePageEvents.clickOnSingInCreateAccount(HomePageEvents.java:34)
+at com.browserstack.BStackDemoTest.checkoutAnItem(BStackDemoTest.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutAnItem -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.browserstack.BStackDemoTest@56303475]" started-at="2024-07-22T20:50:42 EDT" name="tearDown" finished-at="2024-07-22T20:50:44 EDT" duration-ms="2067" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutAnItem status=FAILURE method=BStackDemoTest.checkoutAnItem()[pri:0, instance:com.browserstack.BStackDemoTest@56303475] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.browserstack.BStackDemoTest@56303475]" started-at="2024-07-22T20:50:44 EDT" name="afterTestMethod" finished-at="2024-07-22T20:50:44 EDT" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+      </class> <!-- com.browserstack.BStackDemoTest -->
+    </test> <!-- Default test-2 -->
+    <test started-at="2024-07-22T20:48:48 EDT" name="Default test-1" finished-at="2024-07-22T20:51:48 EDT" duration-ms="179533">
+      <class name="com.browserstack.BStackDemoTest">
+        <test-method is-config="true" signature="beforeTestMethods()[pri:0, instance:com.browserstack.BStackDemoTest@45792847]" started-at="2024-07-22T20:48:49 EDT" name="beforeTestMethods" finished-at="2024-07-22T20:48:49 EDT" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethods -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.browserstack.BStackDemoTest@45792847]" started-at="2024-07-22T20:48:49 EDT" name="setUp" finished-at="2024-07-22T20:50:57 EDT" duration-ms="127831" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.browserstack.BStackDemoTest.checkoutAnItem() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkoutAnItem()[pri:0, instance:com.browserstack.BStackDemoTest@45792847]" started-at="2024-07-22T20:50:57 EDT" name="checkoutAnItem" finished-at="2024-07-22T20:51:47 EDT" duration-ms="50272" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader 'app')
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:163)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at amarr.core.ElementFetcher.getWebElement(ElementFetcher.java:33)
+at amarr.pages.events.HomePageEvents.clickOnSingInCreateAccount(HomePageEvents.java:34)
+at com.browserstack.BStackDemoTest.checkoutAnItem(BStackDemoTest.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutAnItem -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.browserstack.BStackDemoTest@45792847]" started-at="2024-07-22T20:51:47 EDT" name="tearDown" finished-at="2024-07-22T20:51:48 EDT" duration-ms="1010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutAnItem status=FAILURE method=BStackDemoTest.checkoutAnItem()[pri:0, instance:com.browserstack.BStackDemoTest@45792847] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.browserstack.BStackDemoTest@45792847]" started-at="2024-07-22T20:51:48 EDT" name="afterTestMethod" finished-at="2024-07-22T20:51:48 EDT" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+      </class> <!-- com.browserstack.BStackDemoTest -->
+    </test> <!-- Default test-1 -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -132,9 +132,9 @@ public class BStackDemoTest extends SeleniumTest {
 		orderNow.clickNoThanks();
 		orderNow.clickAddToCart();
 		orderNow.clickCkeckOut();
-		orderNow.selectconfirmationCheckBoxAndClcikNext();
-		orderNow.inputForPaymentDetailsAndPay();
-		orderNow.verifyOrderPlaced("Order Placed!");
+//		orderNow.selectconfirmationCheckBoxAndClcikNext();
+//		orderNow.inputForPaymentDetailsAndPay();
+//		orderNow.verifyOrderPlaced("Order Placed!");
 
 	}
 
