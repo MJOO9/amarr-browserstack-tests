@@ -2,10 +2,12 @@ package amarr.core;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -195,4 +197,29 @@ public class ElementFetcher {
 		return elementsPresent;
 
 	}
+	
+    public void selectOptionRandomly(String[] options, String idOrXpath) {
+        RandomlySelectOption randomOptions = new RandomlySelectOption(options, idOrXpath);
+        randomOptions.selectRandomInputOption();
+    }
+	
+    private class RandomlySelectOption {
+
+        private String[] options;
+        private String id;
+
+        public RandomlySelectOption(String[] options, String id) {
+            this.options = options;
+            this.id = id;
+        }
+
+        public void selectRandomInputOption() {
+            Random random = new Random();
+            String selectRandomOption = options[random.nextInt(options.length)];
+          
+            selectByVisibleText(id, selectRandomOption);
+            
+            
+        }
+    }
 }

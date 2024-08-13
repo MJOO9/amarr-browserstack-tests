@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 11 16:26:28 EDT 2024</td>
+<td>Started on:</td><td>Mon Jul 22 20:48:48 EDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>67 seconds (67102 ms)</td>
+<tr><td>Total time:</td><td>179 seconds (179533 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.browserstack.BStackDemoTest.loginWithInvalidCredentials()'><b>loginWithInvalidCredentials</b><br>Test class: com.browserstack.BStackDemoTest</td>
+<td title='com.browserstack.BStackDemoTest.checkoutAnItem()'><b>checkoutAnItem</b><br>Test class: com.browserstack.BStackDemoTest</td>
 <td><div><pre>java.lang.ClassCastException: class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader &apos;app&apos;)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:163)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at com.browserstack.BStackDemoTest.loginWithInvalidCredentials(BStackDemoTest.java:68)
+	at amarr.core.ElementFetcher.getWebElement(ElementFetcher.java:33)
+	at amarr.pages.events.HomePageEvents.clickOnSingInCreateAccount(HomePageEvents.java:34)
+	at com.browserstack.BStackDemoTest.checkoutAnItem(BStackDemoTest.java:112)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -103,13 +105,15 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div><a href='#' onClick='toggleBox("stack-trace365682639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace365682639'><pre>java.lang.ClassCastException: class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader &apos;app&apos;)
+</pre></div><a href='#' onClick='toggleBox("stack-trace59582022", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace59582022'><pre>java.lang.ClassCastException: class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader &apos;app&apos;)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:163)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at com.browserstack.BStackDemoTest.loginWithInvalidCredentials(BStackDemoTest.java:68)
+	at amarr.core.ElementFetcher.getWebElement(ElementFetcher.java:33)
+	at amarr.pages.events.HomePageEvents.clickOnSingInCreateAccount(HomePageEvents.java:34)
+	at com.browserstack.BStackDemoTest.checkoutAnItem(BStackDemoTest.java:112)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -133,7 +137,7 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>50</td>
-<td>com.browserstack.BStackDemoTest@4074023c</td></tr>
+<td>com.browserstack.BStackDemoTest@45792847</td></tr>
 </table><p>
 </body>
 </html>

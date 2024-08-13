@@ -112,4 +112,6 @@ public class OrderNowEvents implements OrderNowElements{
        
 	 fetcher.verify(orderPlacedTxt, "Order Placed!", "the text after placing the order:"+orderPlacedTxt);
 	}
+	
+	
 }

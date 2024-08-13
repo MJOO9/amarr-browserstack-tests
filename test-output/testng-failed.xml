@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="15" parallel="tests" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="15" name="Default test-1(failed)">
-    <parameter name="platform" value="1"/>
-    <classes>
-      <class name="com.browserstack.BStackDemoTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="beforeTestMethods"/>
-          <include name="setUp"/>
-          <include name="loginWithInvalidCredentials"/>
-          <include name="afterTestMethod"/>
-        </methods>
-      </class> <!-- com.browserstack.BStackDemoTest -->
-    </classes>
-  </test> <!-- Default test-1(failed) -->
-  <test thread-count="15" name="Default test-2(failed)">
-    <parameter name="platform" value="2"/>
-    <classes>
-      <class name="com.browserstack.BStackDemoTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="beforeTestMethods"/>
-          <include name="setUp"/>
-          <include name="loginWithInvalidCredentials"/>
-          <include name="afterTestMethod"/>
-        </methods>
-      </class> <!-- com.browserstack.BStackDemoTest -->
-    </classes>
-  </test> <!-- Default test-2(failed) -->
   <test thread-count="15" name="Default test-0(failed)">
     <parameter name="platform" value="0"/>
     <classes>
@@ -37,10 +9,38 @@
           <include name="tearDown"/>
           <include name="beforeTestMethods"/>
           <include name="setUp"/>
-          <include name="loginWithInvalidCredentials"/>
+          <include name="checkoutAnItem"/>
           <include name="afterTestMethod"/>
         </methods>
       </class> <!-- com.browserstack.BStackDemoTest -->
     </classes>
   </test> <!-- Default test-0(failed) -->
+  <test thread-count="15" name="Default test-2(failed)">
+    <parameter name="platform" value="2"/>
+    <classes>
+      <class name="com.browserstack.BStackDemoTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeTestMethods"/>
+          <include name="setUp"/>
+          <include name="checkoutAnItem"/>
+          <include name="afterTestMethod"/>
+        </methods>
+      </class> <!-- com.browserstack.BStackDemoTest -->
+    </classes>
+  </test> <!-- Default test-2(failed) -->
+  <test thread-count="15" name="Default test-1(failed)">
+    <parameter name="platform" value="1"/>
+    <classes>
+      <class name="com.browserstack.BStackDemoTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeTestMethods"/>
+          <include name="setUp"/>
+          <include name="checkoutAnItem"/>
+          <include name="afterTestMethod"/>
+        </methods>
+      </class> <!-- com.browserstack.BStackDemoTest -->
+    </classes>
+  </test> <!-- Default test-1(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

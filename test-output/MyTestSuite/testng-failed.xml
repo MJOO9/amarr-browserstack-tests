@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="15" parallel="tests" name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="15" name="MyTest-1(failed)">
+    <parameter name="platform" value="1"/>
+    <classes>
+      <class name="com.browserstack.BStackDemoTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeTestMethods"/>
+          <include name="setUp"/>
+          <include name="loginTestWithPom"/>
+          <include name="afterTestMethod"/>
+        </methods>
+      </class> <!-- com.browserstack.BStackDemoTest -->
+    </classes>
+  </test> <!-- MyTest-1(failed) -->
+  <test thread-count="15" name="MyTest-0(failed)">
+    <parameter name="platform" value="0"/>
+    <classes>
+      <class name="com.browserstack.BStackDemoTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeTestMethods"/>
+          <include name="setUp"/>
+          <include name="loginTestWithPom"/>
+          <include name="afterTestMethod"/>
+        </methods>
+      </class> <!-- com.browserstack.BStackDemoTest -->
+    </classes>
+  </test> <!-- MyTest-0(failed) -->
+  <test thread-count="15" name="MyTest-2(failed)">
+    <parameter name="platform" value="2"/>
+    <classes>
+      <class name="com.browserstack.BStackDemoTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeTestMethods"/>
+          <include name="setUp"/>
+          <include name="loginTestWithPom"/>
+          <include name="afterTestMethod"/>
+        </methods>
+      </class> <!-- com.browserstack.BStackDemoTest -->
+    </classes>
+  </test> <!-- MyTest-2(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->
